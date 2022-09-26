@@ -17,7 +17,7 @@
                     {{ __('ยินดีต้อนรับสู่หน้าเว็บของฉัน') }}
                     <br>
                     <button type="submit" onclick="document.location='form'" class="btn btn-primary">
-                        Profile
+                        Create Profile
                     </button>
                     <button type="submit" onclick="document.location='page'" class="btn btn-primary">
                         Page

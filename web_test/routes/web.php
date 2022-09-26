@@ -34,4 +34,12 @@ Route::get('form',function() {
     return view('form');
 })->middleware('auth');
 
-Route::post('postProfile', [App\Http\Controllers\ProfileController::class, 'saveProfile']);
+Route::post('postProfile', [App\Http\Controllers\ProfileController::class, 'postProfile']);
+
+Route::get('profile_list', [App\Http\Controllers\ProfileController::class, 'getProfile']);
+
+Route::post('delProfile', [App\Http\Controllers\ProfileController::class, 'delProfile']);
+
+Route::get('edit_{id}', [App\Http\Controllers\ProfileController::class, 'formEdit']);
+
+Route::post('updateProfile', [App\Http\Controllers\ProfileController::class, 'updateProfile']);
